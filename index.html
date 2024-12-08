@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search post office</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="first">
+      <div class="box1">
+        <p>Post Office Application.</p>
+        <span
+          >This Application Allows you to extract information about the nearest
+          Post Offices, based on your location.</span
+        >
+        <div class="img_box">
+          <img src="./gallary/pic.png" />
+        </div>
+      </div>
+      <div class="box2">
+        <p>Your Current IP Address is : <span class="ip" id="ip"></span></p>
+        <button id="btn">Get Started</button>
+      </div>
+    </div>
+    <div id="render">
+      <div class="detail_container">
+        <div class="ip_detail">
+          <p>IP Address : <span id="ip_address"></span></p>
+          <div class="lat_wraper">
+            <div class="ip_item">
+              <p>Lat</p>
+              : <span id="lat"></span>
+            </div>
+            <div class="ip_item">
+              <p>City</p>
+              : <span id="city"></span>
+            </div>
+            <div class="ip_item">
+              <p>organisation</p>
+              : <span id="organisation"></span>
+            </div>
+          </div>
+          <div class="lat_wraper">
+            <div class="ip_item">
+              <p>Long</p>
+              : <span id="long"></span>
+            </div>
+            <div class="ip_item">
+              <p>Region</p>
+              : <span id="region"></span>
+            </div>
+            <div class="ip_item">
+              <p>HostName</p>
+              : <span id="hostname"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map_container">
+        <p>Your Current Location</p>
+        <iframe
+          id="ifram"
+          width="100%"
+          height="270"
+          frameborder="0"
+          style="border: 0"
+        ></iframe>
+      </div>
+      <div class="more_info">
+        <p class="info_para">More Information About You</p>
+        <div class="detail">
+          <p>Time Zone</p>
+          :<span id="time_zone"></span>
+        </div>
+        <div class="detail">
+          <p>Date And Time</p>
+          : <span id="date_time"></span>
+        </div>
+        <div class="detail">
+          <p>Pincode</p>
+          : <span id="pincode"></span>
+        </div>
+        <div class="detail">
+          <p>Message</p>
+          : <span id="message"></span>
+        </div>
+      </div>
+      <div class="postOffice_container">
+        <h4>Post Offices Near You</h4>
+        <input
+          type="text"
+          placeholder="Search By Name"
+          id="search_post"
+          value=""
+        />
+        <div class="post_office_wrapper" id="post_office_wrapper"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
