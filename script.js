@@ -18,7 +18,7 @@ document.getElementById("btn").addEventListener("click", () => {
   document.getElementById("first").style.display = "none";
   document.getElementById("render").style.display = "block";
 });
-// Script js
+// Script js program
 let ip;
 $(document).ready(() => {
   $.getJSON("https://api.ipify.org?format=json", function (data) {
